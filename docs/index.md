@@ -1,17 +1,42 @@
-# Welcome to MkDocs
+# CyberSafe Docs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Benvinguts a **CyberSafe Docs**, una web de documentació tècnica sobre ciberseguretat.
 
-## Commands
+## Objectiu
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+L'objectiu d'aquesta web és explicar de manera senzilla alguns conceptes bàsics de seguretat informàtica.
 
-## Project layout
+La web està pensada perquè un usuari o administrador pugui consultar informació sobre:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- Contrasenyes segures
+- Autenticació
+- Firewalls
+- VPN
+- Còpies de seguretat
+- Actualitzacions
+- Phishing
+- Seguretat Wi-Fi
+
+## Seccions
+
+### Seguretat
+
+En aquesta secció expliquem com protegir els comptes i les credencials dels usuaris.
+
+### Xarxes
+
+Aquí expliquem algunes eines i tecnologies utilitzades per protegir les comunicacions.
+
+### Protecció
+
+En aquesta secció expliquem les còpies de seguretat i les actualitzacions.
+
+### Articles
+
+Inclou diferents articles pràctics relacionats amb la ciberseguretat.
+
+## Tecnologia
+
+Aquesta web ha estat creada amb **MkDocs** i **Material for MkDocs**.
+
+El contingut està escrit principalment amb **Markdown**.
