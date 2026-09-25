@@ -1,8 +1,5 @@
 # Seguretat en una xarxa Wi-Fi
 
-**Data:** 25/09/2026  
-**Autor:** Duna Bou Crespi
-
 ## Introducció
 
 Les xarxes Wi-Fi permeten connectar dispositius sense necessitat d'utilitzar cables.

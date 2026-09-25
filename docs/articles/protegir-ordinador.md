@@ -1,8 +1,5 @@
 # Com protegir un ordinador
 
-**Data:** 25/09/2026  
-**Autor:** Duna Bou Crespi
-
 ## Introducció
 
 Un ordinador pot contenir informació personal, documents i credencials d'accés.
