@@ -1,0 +1,33 @@
+site_name: EcoTech Docs
+site_description: Documentació tècnica de sistemes i xarxes
+site_author: Duna Bou Crespi i Marc Mons Muñoz
+
+theme:
+  name: material
+  language: ca
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Inici: index.md
+
+  - Linux:
+      - Usuaris i grups: linux/usuaris-grups.md
+      - Permisos: linux/permisos.md
+
+  - Xarxes:
+      - TCP/IP: xarxes/tcp-ip.md
+      - DNS: xarxes/dns.md
+
+  - Serveis:
+      - SSH: serveis/ssh.md
+      - HTTP: serveis/http.md
+
+  - Articles:
+      - Article 1: articles/article-1.md
+      - Article 2: articles/article-2.md
+      - Article 3: articles/article-3.md
