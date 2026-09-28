@@ -1,7 +1,5 @@
 # CyberSafe Docs
 
-![Seguretat informàtica](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Tp1FK1K8wcEAEbqkBN2JRw_WaipPUrVms8Abw8rPXXa-pt7phjZH7Hc&s=10?auto=format&fit=crop&w=1200&q=80)
-
 Benvinguts a **CyberSafe Docs**, una web de documentació tècnica sobre *ciberseguretat*.
 
 ## Objectiu
@@ -19,47 +17,110 @@ La web està pensada perquè un usuari o administrador pugui consultar informaci
 - **Phishing**
 - **Seguretat Wi-Fi**
 
-## Seccions
+<div class="cyber-hero">
 
-### Seguretat
+<h2>Documentació bàsica sobre ciberseguretat</h2>
 
-En aquesta secció expliquem com protegir els comptes i les credencials dels usuaris.
+<p>Aprèn conceptes de <strong>seguretat informàtica</strong>, xarxes i protecció de sistemes d'una manera senzilla i pràctica.</p>
 
-### Xarxes
+</div>
 
-Aquí expliquem algunes eines i tecnologies utilitzades per protegir les comunicacions.
+## Què trobaràs?
 
-### Protecció
+<div class="cyber-grid">
 
-En aquesta secció expliquem les còpies de seguretat i les actualitzacions.
+<div class="cyber-card">
 
-### Articles
+<h3>Seguretat</h3>
 
-Inclou diferents articles pràctics relacionats amb la ciberseguretat.
+<p>Aprèn a protegir els teus comptes amb <strong>contrasenyes segures</strong> i autenticació.</p>
 
-## Tecnologies utilitzades
+</div>
 
-| Tecnologia | Utilitat |
+<div class="cyber-card">
+
+<h3>Xarxes</h3>
+
+<p>Coneix eines com els <strong>firewalls</strong> i les <strong>VPN</strong> per protegir les comunicacions.</p>
+
+</div>
+
+<div class="cyber-card">
+
+<h3>Protecció</h3>
+
+<p>Aprèn la importància de les <strong>còpies de seguretat</strong> i les actualitzacions.</p>
+
+</div>
+
+<div class="cyber-card">
+
+<h3>Articles</h3>
+
+<p>Consulta articles pràctics sobre diferents problemes de seguretat.</p>
+
+</div>
+
+</div>
+
+---
+
+## Com començar
+
+Si és la teva primera visita, et recomano començar per:
+
+1. Llegir la secció de **Seguretat**.
+2. Conèixer el funcionament dels **firewalls i VPN**.
+3. Aprendre com fer **còpies de seguretat**.
+4. Consultar els **articles pràctics**.
+
+<div style="text-align: center; margin: 35px 0;">
+
+<a class="cyber-button" href="seguretat/contrasenyes/">
+Començar amb seguretat
+</a>
+
+<a class="cyber-button" href="articles/protegir-ordinador/">
+Veure articles
+</a>
+
+</div>
+
+---
+
+## Continguts
+
+| Secció | Contingut |
 |---|---|
-| MkDocs | Generar la web |
-| Markdown | Escriure el contingut |
-| Git | Controlar les versions |
-| GitHub | Allotjar el projecte |
+| Seguretat | Contrasenyes i autenticació |
+| Xarxes | Firewall i VPN |
+| Protecció | Backups i actualitzacions |
+| Articles | Guies pràctiques |
 
-## Recursos
+---
 
-Pots consultar més informació sobre Markdown a la [documentació oficial de Markdown](https://www.markdownguide.org/).
+## Tecnologies
 
-També pots consultar la [documentació oficial de MkDocs](https://www.mkdocs.org/).
+Aquesta web ha estat creada utilitzant:
 
-> **Nota:** Aquesta web és un projecte educatiu sobre conceptes bàsics de ciberseguretat.
+- **MkDocs** → generador de la web
+- **Markdown** → contingut
+- **Git** → control de versions
+- **GitHub** → repositori
+- **GitHub Pages** → publicació
 
-## Exemple de codi
+---
+
+## Exemple de comanda
+
+Per executar la web localment:
 
 ```bash
 mkdocs serve
 ```
-Per generar la web estàtica:
+I per generar la web:
+
 ```bash
-mkdocs build
+mkdocs serve
 ```
+

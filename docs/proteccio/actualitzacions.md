@@ -1,47 +1,87 @@
 # Actualitzacions
 
-Les actualitzacions permeten corregir errors, millorar el funcionament del sistema i solucionar vulnerabilitats conegudes.
+Les **actualitzacions** són importants per mantenir un ordinador, un mòbil o qualsevol altre dispositiu segur i funcionant correctament.
 
-## Per què actualitzar?
+Les actualitzacions poden corregir errors, solucionar vulnerabilitats de seguretat i millorar el funcionament del sistema.
 
-És important mantenir actualitzats:
+---
 
-- Sistema operatiu.
-- Navegador.
-- Aplicacions.
-- Servidors.
-- Eines de seguretat.
+## Per què són importants?
 
-## Actualitzacions en Linux
+Un sistema que no està actualitzat pot tenir **vulnerabilitats de seguretat** que poden ser aprofitades per un atacant.
 
-En una distribució basada en Debian podem consultar la informació dels paquets amb:
+Les actualitzacions permeten:
+
+- Corregir errors de seguretat.
+- Solucionar problemes del sistema.
+- Millorar el rendiment.
+- Afegir noves funcions.
+- Fer que els programes siguin més compatibles.
+- Protegir el dispositiu davant d'amenaces conegudes.
+
+---
+
+## Tipus d'actualitzacions
+
+No totes les actualitzacions tenen el mateix objectiu.
+
+| Tipus | Funció |
+|---|---|
+| Seguretat | Corregeixen vulnerabilitats i problemes de seguretat. |
+| Sistema | Milloren o modifiquen el sistema operatiu. |
+| Aplicacions | Actualitzen programes instal·lats. |
+| Controladors | Milloren la comunicació entre el sistema i el maquinari. |
+| Funcionalitats | Afegeixen noves opcions o característiques. |
+
+---
+
+## Actualitzacions automàtiques
+
+Una de les opcions més recomanables és activar les **actualitzacions automàtiques**.
+
+D'aquesta manera, el sistema pot descarregar i instal·lar actualitzacions sense haver de comprovar-les manualment cada vegada.
+
+Per exemple, a Windows podem anar a:
+
+**Configuració → Windows Update**
+
+I comprovar si hi ha actualitzacions disponibles.
+
+---
+
+## Actualitzar Ubuntu
+
+En sistemes Linux com Ubuntu, les actualitzacions es poden fer des del terminal.
+
+Primer podem actualitzar la informació dels paquets:
 
 ```bash
 sudo apt update
 ```
-
-# Actualitzacions
-
-Per instal·lar les actualitzacions disponibles:
+Després podem instal·lar les actualitzacions disponibles:
 
 ```bash
 sudo apt upgrade
 ```
+També podem executar les dues ordres seguides:
 
-## Actualitzacions automàtiques
+```bash
+sudo apt update && sudo apt upgrade
+```
 
-Les actualitzacions automàtiques poden ajudar a mantenir els sistemes actualitzats sense haver de realitzar manualment totes les actualitzacions.
+## Què fa cada ordre?
 
-## Exemple de manteniment
+- `apt update`: comprova si hi ha versions noves dels paquets.
+- `apt upgrade`: instal·la les actualitzacions disponibles.
 
-```text
-Comprovar actualitzacions
-          |
-          v
-Instal·lar actualitzacions
-          |
-          v
-Reiniciar si és necessari
-          |
-          v
-Comprovar el sistema
+## Què pot passar si no actualitzem?
+
+Si deixem un sistema molt de temps sense actualitzar, poden aparèixer diferents problemes:
+
+- Vulnerabilitats de seguretat.
+- Errors en els programes.
+- Problemes de compatibilitat.
+- Pèrdua de funcions o suport.
+- Major risc davant de malware i altres atacs.
+
+Per això és important **revisar les actualitzacions amb regularitat**.

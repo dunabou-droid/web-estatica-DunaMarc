@@ -158,9 +158,9 @@ Empremta digital
    ▼
 Sistema de verificació
    │
-   ├── Correcta ──► ✅ Accés
+   ├── Correcta ──►  Accés
    │
-   └── Incorrecta ─► ❌ Accés denegat
+   └── Incorrecta ─►  Accés denegat
 ```
 La biometria pot facilitar l'accés perquè no cal memoritzar una contrasenya, però també és important protegir correctament el dispositiu i el compte.
 

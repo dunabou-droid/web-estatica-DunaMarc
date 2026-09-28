@@ -10,12 +10,12 @@ Una **contrasenya segura** dificulta que altres persones puguin accedir als nost
 
 Actualment utilitzem contrasenyes per accedir a molts serveis:
 
-- 📧 Correu electrònic
-- 🌐 Xarxes socials
-- 💻 Ordinadors
-- 🏦 Banca en línia
-- ☁️ Serveis al núvol
-- 🎮 Videojocs i plataformes d'entreteniment
+- Correu electrònic
+- Xarxes socials
+- Ordinadors
+- Banca en línia
+- Serveis al núvol
+- Videojocs i plataformes d'entreteniment
 
 Si una persona aconsegueix la nostra contrasenya, podria accedir a informació personal o fer accions en el nostre nom.
 

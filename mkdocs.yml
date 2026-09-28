@@ -1,22 +1,49 @@
 site_name: CyberSafe Docs
 site_description: Documentació bàsica sobre ciberseguretat
-site_author: Duna Bou Crespi i Marc Mons Muñoz
+site_author: Duna Bou Crespi
 
 theme:
   name: material
+
   language: ca
+
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Mode fosc
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Mode clar
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
+    - navigation.top
+    - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate
+
+  logo: https://cdn.jsdelivr.net/npm/@mdi/svg/svg/shield-lock.svg
+  favicon: https://cdn.jsdelivr.net/npm/@mdi/svg/svg/shield-lock.svg
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Inici: index.md
 
   - Seguretat:
-      - Contrasenyes segures: seguretat/contrasenyes.md
+      - Contrasenyes: seguretat/contrasenyes.md
       - Autenticació: seguretat/autenticacio.md
 
   - Xarxes:
@@ -29,5 +56,16 @@ nav:
 
   - Articles:
       - Com protegir un ordinador: articles/protegir-ordinador.md
-      - Atacs de phishing: articles/phishing.md
+      - Com identificar phishing: articles/phishing.md
       - Seguretat Wi-Fi: articles/seguretat-wifi.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search

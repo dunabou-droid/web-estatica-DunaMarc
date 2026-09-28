@@ -38,9 +38,9 @@ Connexió
    ▼
 Firewall
    │
-   ├── Regla permet → ✅ Accés
+   ├── Regla permet →  Accés
    │
-   └── Regla bloqueja → ❌ Accés denegat
+   └── Regla bloqueja →  Accés denegat
 ```
 Les regles poden tenir en compte diferents elements:
 

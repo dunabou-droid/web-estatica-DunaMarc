@@ -3,7 +3,7 @@
 **Data:** 28/09/2026  
 **Autor:** Duna Bou Crespi i Marc Mons Muñoz
 
-![Seguretat davant del phishing](https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80)
+![Seguretat davant del phishing](https://www.bbva.com/wp-content/uploads/2018/10/Portada-Phishing.jpg?auto=format&fit=crop&w=1200&q=80)
 
 ## Què és el phishing?
 
