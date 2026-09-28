@@ -163,3 +163,53 @@ Sistema de verificació
    └── Incorrecta ─► ❌ Accés denegat
 ```
 La biometria pot facilitar l'accés perquè no cal memoritzar una contrasenya, però també és important protegir correctament el dispositiu i el compte.
+
+## PIN
+
+Un PIN és un codi numèric que es pot utilitzar per autenticar-se en alguns dispositius i serveis.
+
+Per exemple:
+
+```text
+PIN: 4827
+```
+No és recomanable utilitzar combinacions fàcils d'endevinar com:
+
+```text
+1234
+0000
+1111
+```
+És millor utilitzar un PIN que no sigui fàcil de predir.
+
+## Errors habituals
+
+Hi ha alguns errors que poden reduir la seguretat de l'autenticació.
+
+### Compartir contrasenyes
+
+No hem de compartir les nostres contrasenyes amb altres persones.
+
+### Compartir codis 2FA
+
+Els codis de verificació també són personals.
+
+No s'han de proporcionar a altres persones, encara que diguin ser personal d'un servei.
+
+### Acceptar peticions desconegudes
+
+Si rebem una notificació d'inici de sessió que no hem fet nosaltres, **no l'hem d'acceptar**.
+
+### Utilitzar la mateixa contrasenya
+
+No és recomanable utilitzar la mateixa contrasenya en molts serveis.
+
+### Utilitzar codis fàcils
+
+Evita PIN com:
+
+```text
+1234
+0000
+1111
+```

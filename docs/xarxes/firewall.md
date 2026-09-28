@@ -1,52 +1,96 @@
 # Firewall
 
-Un firewall és un sistema que controla el trànsit de xarxa segons unes regles de seguretat.
+Un **firewall** o tallafocs és un sistema que controla el trànsit de xarxa entre dispositius.
 
-## Funció
+La seva funció principal és **permetre o bloquejar connexions** segons unes regles de seguretat.
 
-Un firewall pot permetre o bloquejar determinades connexions.
+---
 
-Un exemple simplificat seria:
+## Per a què serveix?
+
+Un firewall ajuda a:
+
+- Bloquejar connexions no autoritzades.
+- Permetre serveis necessaris.
+- Controlar el trànsit de xarxa.
+- Protegir dispositius i servidors.
+- Reduir el risc d'accessos no autoritzats.
 
 ```text
 Internet
-   |
-   v
+   │
+   ▼
+┌──────────────┐
+│   FIREWALL   │
+└──────┬───────┘
+       │
+       ▼
+ Xarxa interna
+```
+
+## Com funciona?
+
+El firewall analitza les connexions i les compara amb les regles configurades.
+
+```text
+Connexió
+   │
+   ▼
 Firewall
-   |
-   +---- Servidor web
-   |
-   +---- Xarxa interna
+   │
+   ├── Regla permet → ✅ Accés
+   │
+   └── Regla bloqueja → ❌ Accés denegat
 ```
+Les regles poden tenir en compte diferents elements:
 
-  ## Firewall en Linux
+- **Adreça IP d'origen.**
+- **Adreça IP de destinació.**
+- **Port.**
+- **Protocol.**
+- **Direcció del trànsit.**
 
-En alguns sistemes Linux podem utilitzar ufw per gestionar les regles del firewall.
+## Ports i protocols
 
-Per consultar l'estat:
+Els ports permeten identificar diferents serveis de xarxa.
+
+| Port | Protocol | Servei |
+|---:|---|---|
+| 22 | TCP | SSH |
+| 53 | UDP/TCP | DNS |
+| 80 | TCP | HTTP |
+| 443 | TCP | HTTPS |
+| 3389 | TCP | RDP |
+
+Per exemple, una regla podria permetre el trànsit HTTPS:
+
 ```text
-sudo ufw status
+Protocol: TCP
+Port: 443
+Acció: PERMETRE
 ```
 
-Per activar-lo:
-```text
-sudo ufw enable
-```
+## Exemple de regles
 
-Per permetre connexions SSH:
-```text
-sudo ufw allow 22/tcp
-```
-## Regles
+Un firewall pot tenir regles com aquestes:
 
-Les regles del firewall determinen quin trànsit es permet i quin es bloqueja.
+| Origen | Destinació | Port | Acció |
+|---|---|---:|---|
+| Xarxa interna | Servidor web | 443 | Permetre |
+| Xarxa interna | Servidor SSH | 22 | Permetre |
+| Internet | Servidor | 22 | Bloquejar |
+| Internet | Servidor web | 443 | Permetre |
 
-Per exemple, una organització pot permetre connexions a un servidor web però bloquejar altres ports que no siguin necessaris.
+Les regles s'han de configurar segons les **necessitats de la xarxa**.
 
-## Importància
+## Bones pràctiques
 
-Un firewall ajuda a controlar les comunicacions i a reduir les connexions no autoritzades.
+Per configurar correctament un firewall:
 
-## Resum
-
-La configuració d'un firewall és una mesura important dins de la protecció d'una xarxa.
+- Permet només els serveis necessaris.
+- Bloqueja els ports que no s'utilitzen.
+- Revisa periòdicament les regles.
+- ⬆Mantén el sistema actualitzat.
+- Evita exposar serveis innecessaris a Internet.
+- Utilitza HTTPS per als serveis web.
+- Limita l'accés administratiu quan sigui possible.
