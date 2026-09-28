@@ -1,5 +1,10 @@
 # Seguretat en una xarxa Wi-Fi
 
+**Data:** 28/09/2026  
+**Autor:** Duna Bou Crespi i Marc Mons Muñoz
+
+![Xarxa Wi-Fi segura](https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80)
+
 ## Introducció
 
 Les xarxes Wi-Fi permeten connectar dispositius sense necessitat d'utilitzar cables.
