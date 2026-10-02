@@ -121,6 +121,6 @@ mkdocs serve
 I per generar la web:
 
 ```bash
-mkdocs serve
+mkdocs build
 ```
 
