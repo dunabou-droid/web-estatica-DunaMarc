@@ -1,71 +1,29 @@
-site_name: CyberSafe Docs
-site_description: Documentació bàsica sobre ciberseguretat
-site_author: Duna Bou Crespi
 
-theme:
-  name: material
+name: Publicar web amb MkDocs
 
-  language: ca
+on:
+  push:
+    branches:
+      - main
 
-  palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Mode fosc
+permissions:
+  contents: write
 
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Mode clar
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-  font:
-    text: Roboto
-    code: Roboto Mono
+    steps:
+      - name: Descarregar el repositori
+        uses: actions/checkout@v4
 
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-    - content.code.annotate
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
-  logo: https://cdn.jsdelivr.net/npm/@mdi/svg/svg/shield-lock.svg
-  favicon: https://cdn.jsdelivr.net/npm/@mdi/svg/svg/shield-lock.svg
+      - name: Instal·lar MkDocs i el tema
+        run: pip install mkdocs-material
 
-extra_css:
-  - stylesheets/extra.css
-
-nav:
-  - Inici: index.md
-
-  - Seguretat:
-      - Contrasenyes: seguretat/contrasenyes.md
-      - Autenticació: seguretat/autenticacio.md
-
-  - Xarxes:
-      - Firewall: xarxes/firewall.md
-      - VPN: xarxes/vpn.md
-
-  - Protecció:
-      - Còpies de seguretat: proteccio/copies-seguretat.md
-      - Actualitzacions: proteccio/actualitzacions.md
-
-  - Articles:
-      - Com protegir un ordinador: articles/protegir-ordinador.md
-      - Com identificar phishing: articles/phishing.md
-      - Seguretat Wi-Fi: articles/seguretat-wifi.md
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - attr_list
-  - md_in_html
-
-plugins:
-  - search
+      - name: Generar i publicar la web
+        run: mkdocs gh-deploy --force
